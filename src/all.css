@@ -117,7 +117,7 @@ footer {
             font-family: Anton;
             font-size: 2rem;
             padding-left: 2rem;
-            display: none;
+            display: block;
 
         }
     #burgerMenu {
