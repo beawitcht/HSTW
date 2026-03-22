@@ -90,6 +90,7 @@ tr:nth-child(even) {
 }
 .event-description {
     text-align: center;
+    max-width: 1000px;
 }
 
 .previous-events-title {
