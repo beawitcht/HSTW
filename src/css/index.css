@@ -1,12 +1,15 @@
 body {
     background-color: #f3f0e0;
-    background-image: url("/src/images/protest.jpg");
+    background-image: url("/src/images/protest.png");
     background-size: cover;
     backdrop-filter: blur(10px) grayscale(100%) brightness(40%);
+    background-position: center;
 }
 
 
-
+.promoted-event-container{
+        min-height: 55vh;
+    }
 
 .title-paragraph {
     text-align: center;
