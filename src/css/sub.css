@@ -28,7 +28,10 @@ main {
     align-items: center;
 }
 
-
+.event-description{
+    font-family: Montserrat;
+    font-weight: 700;
+}
 
 .event-container {
     display: flex;
