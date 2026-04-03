@@ -4,13 +4,14 @@
 <head>
     <link href="src/css/min/all.css" rel="stylesheet" />
     <link href="src/css/min/sub.css" rel="stylesheet" />
+    <link href="src/css/min/form.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=block"
         rel="stylesheet">
     <script src="/src/js/nav.js"></script>
-
+    <script src="/src/js/pledgeform.js"></script>
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://hastingsstopthewar.org/src/images/og/twitterimage.png">
     <meta property="og:image:alt" content="Text reading Hastings says no! to war, over a blurred image of a vigil.">
@@ -24,15 +25,18 @@
     <link rel="icon" type="image/webp" href="src/images/logo.webp">
     <link rel="apple-touch-icon" href="src/images/og/apple-touch-icon.png">
     <meta property="og:logo" content="https://hastingsstopthewar.org/src/images/apple-touch-icon.png" />
-    <title>Hastings Stop The War - Resources</title>
-    <link rel="canonical" href="https://hastingsstopthewar.org/resources.html">
-    <meta name="description" content="Resources from Hastings Stop The War">
-    <meta name="twitter:title" content=">Hastings Stop The War - Resources">
-    <meta name="twitter:description" content="Resources from Hastings Stop The War">
-    <meta name="og:title" content="Hastings Stop The War - Resources">
-    <meta name="og:description" content="Resources from Hastings Stop The War">
+    <title>Hastings Stop The War - Join Us</title>
+    <link rel="canonical" href="https://hastingsstopthewar.org/join.html">
+    <meta name="description"
+        content="Join Us, Do you say NO! to war? Sign the pledge.">
+    <meta name="twitter:title" content=">Hastings Stop The War - Join Us">
+    <meta name="twitter:description"
+        content="Join Us, Do you say NO! to war? Sign the pledge.">
+    <meta name="og:title" content="Hastings Stop The War - Join Us">
+    <meta name="og:description"
+        content="Join Us, Do you say NO! to war? Sign the pledge.">
     <meta name="keywords"
-        content="stop the war,Iran,Palestine,Lebanon,Hastings,activism,movement,local,community,Resources">
+        content="stop the war,Iran,Palestine,Lebanon,Hastings,activism,movement,pledge,community,join">
 </head>
 
 <body>
@@ -63,10 +67,10 @@
                     <li class="nav-item">
                         <a href="/events.html"> Events </a>
                     </li>
-                    <li class="nav-item nav-item-active">
+                    <li class="nav-item">
                         <a href="/resources.html"> Resources </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav-item-active">
                         <a href="/join.html"> Join us </a>
                     </li>
                     </li>
@@ -79,22 +83,35 @@
         <div class="content-container">
             <div class="title-container">
                 <div class="title-area">
-                    <h1 class="title-header"> Resources</h1>
-                    <p class="title-paragraph">information and campaigns</p>
+                    <h1 class="title-header" id="titleH">Join Us</h1>
+                    <p class="title-paragraph" id="titleP">Do you say NO! to war?</p>
                 </div>
             </div>
             <div class="event-container">
-                <a class="event-link" href="/cost.html">
-                    <h2 class="content-title">The cost of war</h2>
-                </a>
-                <p class="event-description"> Statistics on the human cost of conflicts in Iran, Lebanon, and Gaza </p>
+                <form id="pledgeForm" method="POST" novalidate="true"
+                    action="https://script.google.com/macros/s/AKfycby68vdoJRuxNicGmhWvf9iXD72vkm6LZ3ScE564eLmPhNdZYZdjE30kqDb5IqSXWZcQ/exec">
+                    <input name="Name" type="text" placeholder="Name" required>
+                    <input name="Email" type="email" placeholder="Email" required>
+                    <input name="Postcode" type="text" placeholder="Postcode" required>
+                    <button type="submit">I say NO! to war</button>
+                    <div class="submit-message highlighted-text" id="message"></div>
+                    <p>By signing this pledge, you agree to Hastings Stop The War updating you on the
+                        campaign using the information you've provided. For more details on how we use and protect your
+                        data, please see our <a href="/privacy.html" target="_blank">Privacy Notice.</a></p>
+                    
+                </form>
+                <h2 class="event-title highlighted-text" id="successMessage"></h2>
+                <div id="loader" class="loader-overlay">
+                    <div class="square-loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                
             </div>
-            <div class="event-container">
-                <a class="event-link" href="/gd.html">
-                    <h2 class="content-title">General Dynamics</h2>
-                </a>
-                <p class="event-description"> We call for the immediate eviction of General Dynamics from our town. </p>
-            </div>
+
+
 
         </div>
     </main>

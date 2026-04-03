@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{var e=document.getElementById("burgerMenu"),t=document.getElementById("navMenu");e.addEventListener("click",(function(){this.classList.toggle("close"),t.classList.toggle("overlay")}))}));
