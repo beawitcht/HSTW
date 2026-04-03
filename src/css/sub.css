@@ -28,7 +28,10 @@ main {
     align-items: center;
 }
 
-
+.event-description {
+    font-family: Montserrat;
+    font-weight: 700;
+}
 
 .event-container {
     display: flex;
@@ -49,6 +52,10 @@ tr:nth-child(even) {
 
 }
 
+.event-link {
+    color: #fe0000;
+}
+
 .previous-events-title {
     color: #fe0000;
 }
@@ -60,7 +67,6 @@ hr {
 .highlighted-text {
     color: #fe0000;
 }
-
 
 @media (max-width: 1099px) {
     .event-description {
@@ -138,7 +144,7 @@ hr {
 
     .event-title {
         max-width: 1000px;
-        
+
     }
 
     .event-description {

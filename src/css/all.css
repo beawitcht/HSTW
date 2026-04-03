@@ -47,17 +47,34 @@ footer {
     text-align: center;
 }
 
-.socials svg {
-    height: 64px;
-}
 
 .socials a {
     text-decoration: none;
 }
 
 
+.privacy-notice {
+    position: absolute;
+    bottom: 0;
+    right: 24px;
+    height: 48px;
+}
+
 
 @media (width <=1099px) {
+
+    .socials svg {
+        height: 64px;
+    }
+
+    .socials {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0 auto;
+        height: 71px;
+    }
+
 
     h1 {
         font-family: Anton;
@@ -79,6 +96,11 @@ footer {
         font-weight: 400;
     }
 
+    .header {
+        height: 78px !important;
+    }
+
+
     .header-title {
         display: none !important;
 
@@ -86,8 +108,8 @@ footer {
 
     .header-logo {
         padding-top: 4px;
-        height: 124px;
-        width: 124px;
+        height: 68x;
+        width: 68px;
     }
 
     .header-content {
@@ -96,7 +118,7 @@ footer {
         justify-content: flex-start;
         padding: 0 1rem;
         z-index: 1;
-        height: 128px;
+        height: 78px;
 
     }
 
@@ -138,13 +160,13 @@ footer {
     #burgerMenu {
         cursor: pointer;
         height: 48px;
-        width: 64px;
+        width: 48px;
         margin: 0 auto;
         display: block;
         position: absolute;
         margin: 0 auto;
         right: 24px;
-        top: 48px;
+        top: 24px;
         z-index: 2;
 
         span,
@@ -168,21 +190,21 @@ footer {
         span:before {
             left: 0px;
             top: -16px;
-            width: 64px;
+            width: 48px;
         }
 
 
         span {
             right: 0px;
             top: 16px;
-            width: 64px;
+            width: 48px;
         }
 
 
         span:after {
             left: 0px;
             top: 16px;
-            width: 64px;
+            width: 48px;
 
         }
 
@@ -226,7 +248,7 @@ footer {
             visibility: visible;
             opacity: 1;
             right: 0;
-            top: 124px;
+            top: 78px;
             background: white;
         }
 
@@ -252,6 +274,19 @@ footer {
 }
 
 @media (width >=1100px) {
+    .socials svg {
+        height: 64px;
+    }
+
+    .socials {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 71px;
+    }
+
 
     h1 {
         font-family: Anton;
