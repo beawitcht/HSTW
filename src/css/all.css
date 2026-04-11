@@ -32,6 +32,31 @@ body::after {
     z-index: 1;
 }
 
+.screen-reader-text {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    font-size: 3rem;
+}
+
+.screen-reader-text:focus {
+    position: absolute;
+    height: auto;
+    width: auto;
+    left: 40vw;
+    overflow: visible;
+    background: #fe0000;
+    color: white;
+    padding: 8px 16px;
+    z-index: 1000;
+    text-align: center;
+    text-wrap: nowrap;
+    border-radius: 0 0 4px 4px;
+    
+}
+
 .nav-container {
     margin-left: auto;
 }
