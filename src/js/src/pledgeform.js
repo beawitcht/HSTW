@@ -49,13 +49,15 @@ window.addEventListener("load", function () {
             method: 'POST',
             body: data
         })
-            .then(response => {
-                if (response.ok) {
+            .then(response => response.json())
+            .then(json => {
+                if (json.result === 'success') {
                     title.textContent = "You Said NO! to war";
                     pg.textContent = "";
                     successMessage.textContent = "Thank you for signing the pledge";
+                    message.textContent = "";
                 } else {
-                    message.textContent = "Something went wrong...";
+                    message.innerHTML = (json.errors || ["Something went wrong..."]).join('<br>');
                     form.style.display = 'flex';
                 }
             })
