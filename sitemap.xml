@@ -25,6 +25,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://hastingsstopthewar.org/news.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://hastingsstopthewar.org/privacy.html</loc>
     <priority>0.7</priority>
   </url>
